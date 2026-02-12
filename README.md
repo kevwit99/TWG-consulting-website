@@ -1,6 +1,6 @@
 # thewhitegroup Consulting Firm Website
 
-This is a static website design for a consulting firm. It is built using just [thewhitegroup CSS](https://thewhitegroupcss.com/)
+This is a static website design for a consulting firm. It is built using just [thewhitegroup CSS](https://tailwindcss.com/)
 
 ### Live Website
 

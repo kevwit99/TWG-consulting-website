@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx thewhitegroupcss -i ./input.css -o ./css/main.css",
-    "watch": "npx thewhitegroupcss -i ./input.css -o ./css/main.css --watch"
+    "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
   },
   "keywords": [],
   "author": "Emanuele Favero",
   "license": "MIT",
   "devDependencies": {
-    "thewhitegroupcss": "^3.2.4"
+    "tailwindcss": "^3.2.4"
   }
 }
