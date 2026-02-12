@@ -1,10 +1,10 @@
-# thewhitegroup Consulting Firm Website
+# tailwind Consulting Firm Website
 
-This is a static website design for a consulting firm. It is built using just [thewhitegroup CSS](https://tailwindcss.com/)
+This is a static website design for a consulting firm. It is built using just [tailwind CSS](https://tailwindcss.com/)
 
 ### Live Website
 
-[https://emanuelefavero.github.io/thewhitegroup-consulting-website/](https://emanuelefavero.github.io/thewhitegroup-consulting-website/)
+[https://emanuelefavero.github.io/tailwind-consulting-website/](https://emanuelefavero.github.io/tailwind-consulting-website/)
 
 ### Screenshot
 
@@ -16,7 +16,7 @@ To get started, clone this repository and run `npm install` to install the depen
 
 ## Development
 
-To start watching for thewhitegroup changes, run `npm run watch`, then open live server or open the `index.html` file in your browser.
+To start watching for tailwind changes, run `npm run watch`, then open live server or open the `index.html` file in your browser.
 
 ## License
 

@@ -1,6 +1,6 @@
-@thewhitegroup base;
-@thewhitegroup components;
-@thewhitegroup utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .animation-move-right {
   animation: move-right 1s ease-in-out infinite;
