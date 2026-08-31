@@ -13,26 +13,14 @@ export default defineConfig({
     server: { entry: "server" },
 
     // Generate static HTML files during the build
-    prerender: {
+    spa: {
       enabled: true,
 
-      // We only need the root page for this site right now.
-      autoStaticPathsDiscovery: false,
-      crawlLinks: false,
-
-      // Don't kill the entire Azure build if the prerenderer
-      // encounters a non-critical issue.
-      failOnError: false,
-    },
-
-    pages: [
-      {
-        path: "/",
-        prerender: {
-          enabled: true,
-          outputPath: "/index.html",
-        },
+      prerender: {
+        outputPath: "/index.html",
+        crawlLinks: false,
+        retryCount: 0,
       },
-    ],
+    },
   },
 });
