@@ -22,22 +22,40 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Build And Deploy
+      # Build the Lovable/TanStack application ourselves
+      # BEFORE handing anything to Azure Static Web Apps.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Lovable app
+        run: npm run build
+
+      # Make sure the build actually produced the file
+      # Azure Static Web Apps needs at "/".
+      - name: Verify static website
+        run: |
+          echo "Contents of .output/public:"
+          ls -la .output/public
+          test -f .output/public/index.html
+
+      # Azure now ONLY uploads the already-built website.
+      # It does NOT run Oryx again.
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_NICE_DESERT_027852810 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
 
-          # Let Azure/Oryx build the Lovable/TanStack Start app.
-          app_location: "/"
-
-          # Do not manually point this at the generated Nitro server bundle.
-          api_location: ""
-
-          # Nitro's Azure SWA build generates the public artifacts here.
-          output_location: ".output/public"
+          app_location: ".output/public"
+          output_location: ""
+          skip_app_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
