@@ -1,23 +1,29 @@
-# tailwind Consulting Firm Website
+# Welcome to your Lovable project
 
-This is a static website design for a consulting firm. It is built using just [tailwind CSS](https://tailwindcss.com/)
+This project was built with [Lovable](https://lovable.dev).
 
-### Live Website
+## Build with Lovable
 
-[https://emanuelefavero.github.io/tailwind-consulting-website/](https://emanuelefavero.github.io/tailwind-consulting-website/)
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
 
-### Screenshot
-
-![Website Screenshot](./img/screenshot.png 'Website Screenshot')
-
-## Getting Started
-
-To get started, clone this repository and run `npm install` to install the dependencies.
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
-To start watching for tailwind changes, run `npm run watch`, then open live server or open the `index.html` file in your browser.
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-## License
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
+```
 
-- [MIT](LICENSE.md)
+## Built with
+
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS
