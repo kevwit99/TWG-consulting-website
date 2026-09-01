@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logoFullAsset from "@/assets/wg-logo-full.png.asset.json";
+import logoFull from "@/assets/wg-logo-full.png";
 import { nav } from "@/content/site";
 
 export function SiteNav() {
@@ -8,9 +8,9 @@ export function SiteNav() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/70 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-[1240px] items-center justify-between gap-6 px-5 sm:px-8">
-        <a href="#top" className="shrink-0" aria-label="The White Group — home">
+        <a href="#top" className="shrink-0" aria-label="The White Group — Home">
           <img
-            src={logoFullAsset.url}
+            src={logoFull}
             alt="The White Group"
             width={1278}
             height={453}

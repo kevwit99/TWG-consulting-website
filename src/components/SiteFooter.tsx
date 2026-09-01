@@ -1,4 +1,4 @@
-import logoFooterAsset from "@/assets/wg-logo-footer-light.png.asset.json";
+import logoFooter from "@/assets/wg-logo-footer-light.png";
 import { MailIcon, PhoneIcon, PinIcon } from "@/components/icons";
 import { footer } from "@/content/site";
 
@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-[1240px] grid-cols-1 items-center gap-10 px-5 text-center sm:px-8 lg:grid-cols-3 lg:text-left">
         <div className="flex justify-center lg:justify-start">
           <img
-            src={logoFooterAsset.url}
+            src={logoFooter}
             alt="The White Group"
             loading="lazy"
             width={1278}
