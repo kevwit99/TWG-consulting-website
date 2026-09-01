@@ -64,7 +64,7 @@ export const offerings = {
       title: "Aligned Practice",
       subtitle: "Build the Practice that Fits You",
       body: "For experienced professionals ready to create a practice that aligns with who they are and how they work best.",
-      price: "Starting at $15,000",
+      price: "Starting at $7,500",
       term: "3-Month Engagement",
     },
     {
@@ -131,8 +131,8 @@ export const philosophy = {
 export const footer = {
   blurb: ["Private advisory for founders, families", "and leaders navigating what's next."],
   site: "thewhitegroup.us",
-  email: "jaime@thewhitegroup.us",
-  phone: "715-321-1261",
-  phoneHref: "tel:+17153211261",
+  email: "info@thewhitegroup.us",
+  phone: "715-204-1600",
+  phoneHref: "tel:+17152041600",
   location: ["Based in Wisconsin", "Advising Nationwide"],
 };
